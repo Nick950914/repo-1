@@ -19,6 +19,8 @@ body {
   color: #878787;
   margin: 0;
   font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 h1 {  
@@ -58,7 +60,7 @@ img {
   margin-right: 200px;
   position: relative;
   top: 50px;
-  left: 50px;
+  left: 0px; /* 50px; */
   z-index: -1;
 }
 
@@ -207,9 +209,10 @@ input[type="textarea"] {
 footer {
   background-color: #00105E;
   height: 240px;
-  width: 103%;
+  width: 100%;
   padding-top: 20px;
   margin-top: 580px;
+  overflow: hidden;
 }
 
 footer h3 {
@@ -223,7 +226,7 @@ footer a {
 .footer-menu {
   color: white;
   position: absolute;
-  left: 35%;
+  left: 25%;
 }
 
 ul, ol {
@@ -234,8 +237,21 @@ ul, ol {
 .footer-contact-info {
  color: white;
  position: absolute;
- right: 35%;
+ right: 25%;
+ bottom: -10%;
  }
+
+ .certificates {
+    left: 35%;
+    position: relative;
+ }
+
+ .certificates img {
+    width: 7%;
+    height: 7%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
 
 /* Float Clearfix ------------------ */
 
