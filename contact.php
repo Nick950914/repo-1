@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error_message = "Bad form input";
     }
     if (!isset($error_message)) {
-      header("location:thanks.php");
+      header("location:contact.php?status=thanks");
       //keeping this line commented out; stops the database insertion from happening
       //exit;
     }
@@ -71,6 +71,9 @@ include("inc/header.php");
    echo "<h3 class='error'>".$error_message."</h3>";
   }
   ?>
+  <?php if (isset($_GET["status"]) && $_GET["status"] == "thanks") {
+    echo "<h3 class='thanks'>Thank you for your input!</h3>";
+  } else { ?>
  <form method="post" action="contact.php">
   <table>
     <tr>
@@ -99,6 +102,7 @@ include("inc/header.php");
     
     <button class="form-submit-button" type="submit">Изпрати</button>
   </form>
+   <?php } ?>
  </div>
 
 <?php include("inc/footer.php"); ?>
