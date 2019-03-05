@@ -235,20 +235,21 @@ ul, ol {
 }
 
 .footer-contact-info {
- color: white;
- position: absolute;
- right: 25%;
- bottom: -10%;
+   color: white;
+   position: absolute;
+   right: 25%; /* 25% */
+   /*bottom: -8%; /* -8% */
  }
 
  .certificates {
-    left: 35%;
-    position: relative;
+    left: 37%; /* 35% */
+    /*bottom: -9%; */
+    position: absolute;
  }
 
  .certificates img {
-    width: 7%;
-    height: 7%;
+    width: 11%;  /* 7% */
+    height: 11%; /* 7% */
     padding-left: 6px;
     padding-right: 6px;
 }
