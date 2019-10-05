@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php $pageTitle = "Gay if read";
+<?php $pageTitle = "Home";
 $section = home;
 include("inc/header.php");
 ?>
